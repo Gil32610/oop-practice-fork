@@ -1,11 +1,25 @@
 public class Main {
     public static void main(String[] args) {
-        Alunos aluno1 = new Alunos();
-        aluno1.setNome("Joao");
-        aluno1.setDisciplina("Programacao");
-        aluno1.setNotas(10,8,7);
-        aluno1.setMedia(aluno1.getNota1(), aluno1.getNota2(), aluno1.getTrabalho());
-        System.out.println("O nome do aluno é: " + aluno1.getNome() + ", " + "da cadeira de " + aluno1.getDisciplina() + ", com as notas " + aluno1.getNota1()+ ", " + aluno1.getNota2() + " e " + aluno1.getTrabalho());
-        System.out.println("A média do aluno é: " + aluno1.getMedia());
+        Data cal = new Data();
+        Data cal2 = new Data();
+        Data cal3 = new Data();
+
+        cal.setDia("01");
+        cal.setMes("01");
+        cal.setAno("0001");
+
+        cal2.setDia("01");
+        cal2.setMes("01");
+        cal2.setAno("0001");
+
+        cal3.setDia("10");
+        cal3.setMes("10");
+        cal3.setAno("1000");
+
+
+        System.out.println (cal.setData(cal.getDia(), cal.getMes(), cal.getAno()));
+        System.out.println (cal.comparaDataAtual(cal));
+        Aeroporto teste = new Aeroporto();
+        System.out.println(teste.checarLivre(2));
     }
-}
+    }
